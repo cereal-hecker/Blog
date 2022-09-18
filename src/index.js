@@ -5,7 +5,7 @@ import AppWrite from "./components/AppWrite";
 
 var writingPost = false;
 
-if (writingPost){
+if (!writingPost){
     ReactDOM.render(<App />, document.getElementById('root'));
 }
 
