@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=EB+Garamond:ital@1&family=Montserrat&family=Rubik&display=swap');
+
+body{
+    background-color: #171c2f;
+}
+.canvas{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+nav{
+    margin: 3rem 7rem;
+}
+.heading{
+    padding: 7%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 5rem;
+    margin-left: 2rem;
+}
+.title-image{
+    width: 100%;
+    border-radius: 10px;
+}
+.function-button{
+    font-family: 'Montserrat', sans-serif;
+    margin: 5% 3% 5% 0;
+}
+.recent-post{
+    margin-bottom: 1020px;
+
+}
+.top-blog-text{
+    padding: 1% 6%;
+}
+.post {
+    background: #fff;
+    border-radius: 7px;
+    padding: 10px;
+    width: 28%;
+    margin: 2%;
+    float: left;
+}
+.post p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+.post-image{
+    width: 100%;
+}
+.all-posts{
+    width: 80%;
+    margin: auto;
+}
+.space{
+    height: 100px;
+}
+
+/* AppWrite */
+
+form{
+    margin: 30px 100px;
+}
+input{
+    padding: 20px;
+    border-radius: 10px;
+}
+.newBlogHead{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 5rem;
+    margin: 0 100px;
+    color: white;
+}
