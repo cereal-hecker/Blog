@@ -1,44 +1,41 @@
 import React, { useState } from "react";
-import Post from "./Post";
 
-function Write(props) {
-//   const [note, setNote] = useState({
-//     title: "",
-//     content: ""
-//   });
+function Write(props){
+  const [blog, setBlog] = useState({
+    title: "",
+    image: "",
+    content: "",
+  })
 
-//   function handleChange(event) {
-//     const { name, value } = event.target;
+  function handleChange(event){
+    const {name, value} = event.target;
 
-//     setNote(prevNote => {
-//       return {
-//         ...prevNote,
-//         [name]: value
-//       };
-//     });
-//   }
+    setBlog(prevBlog => {
+      return {
+        ...prevBlog,
+        [name]: value
+      };
+    });
+  }
 
-//   function submitNote(event) {
-//     props.onAdd(note);
-//     setNote({
-//       title: "",
-//       content: ""
-//     });
-//     event.preventDefault();
-//   }
-
+  function submitBlog(event){
+    props.onAdd(blog)
+    event.preventDefault();
+  }
+  
   return (
     <div>
-    <h1 class="newBlogHead text-center">New Blog</h1>
+    <h1 className="newBlogHead text-center">New Blog</h1>
         <form className="text-center">
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email ID" />
+        <div className="form-group">
+            <label for="exampleFormControlInput1"></label>
+            <input className="form-control" onChange={handleChange} id="exampleFormControlInput1" placeholder="Title" />
         </div>
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">Example textarea</label>
-            <textarea class="form-control" placeholder="Start writing a new blog..." id="exampleFormControlTextarea1" rows="15"></textarea>
+        <div className="form-group">
+            <label for="exampleFormControlTextarea1">textarea</label>
+            <textarea className="form-control" onChange={handleChange} placeholder="Start writing a new blog..." id="exampleFormControlTextarea1" rows="10"></textarea>
         </div>
+        <button type="submit" onClick={submitBlog} class="btn btn-outline-light btn-lg submit-button">Submit</button>
         </form>
     </div>
   );

@@ -13,6 +13,9 @@ body{
 nav{
     margin: 3rem 7rem;
 }
+nav a{
+    text-decoration: none;
+}
 .heading{
     padding: 7%;
     font-family: 'Montserrat', sans-serif;
@@ -59,11 +62,17 @@ nav{
 .space{
     height: 100px;
 }
-
-/* AppWrite */
+.button-div{
+    width: 100%;
+}
 
 form{
-    margin: 30px 100px;
+    margin: 30px 10%;
+}
+.submit-button{
+    margin: 20px;
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
 input{
     padding: 20px;

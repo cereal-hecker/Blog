@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 function Navbar(){
     return(    
     <nav className="navbar navbar-expand-lg navbar-dark">
@@ -8,10 +10,10 @@ function Navbar(){
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
-                <a className="nav-link write-post" href="#">Write Post</a>
+                <NavLink to="/"><a className="nav-link">Home</a></NavLink>
                 </li>
                 <li className="nav-item">
-                <a className="nav-link" href="#">Contact Us</a>
+                <NavLink to="/write"><a className="nav-link write-post" href="/write">Write Post</a></NavLink>
                 </li>
             </ul>
         </div>
