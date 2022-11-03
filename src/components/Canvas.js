@@ -1,26 +1,13 @@
 import React, { useState } from "react";
 import RecentPost from "./RecentPost";
-import posts from "../posts";
 import Post from "./Post";
 
-function Canvas(){
-
-    const [blog, setBlog] = useState([]);
-    function addBlog(blog) {
-        setBlog(prevBlog => {
-            return [...prevBlog, blog];
-        });
-        console.log(blog);
-    }
-
+function Canvas({posts}){
     return (
         <div>
         <RecentPost />
         <div className="space"></div>
         <div className="all-posts">
-        {blog.map(post => {
-                        return <Post title={post.title} content={post.content} />;
-               })}
         {posts.map(props => (
             <Post
             key={props.key}
