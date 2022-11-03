@@ -1,6 +1,6 @@
-# [Click here to view deployed Project](https://qvddsf-3000.preview.csb.app/)
+# [Click here to view deployed Project](https://blog-one-theta-28.vercel.app/)
 
->> https://qvddsf-3000.preview.csb.app/
+>> https://blog-one-theta-28.vercel.app/
 
 
 # Blog
